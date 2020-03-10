@@ -24,7 +24,7 @@ function SendData() {
     method,
     headers,
     body,
-    mode: 'no-cors'
+    mode: 'no-cors',
   }).then(res => res.json()).catch(error => console.error('Error:', error));
 }
 
