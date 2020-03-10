@@ -20,8 +20,10 @@ function SendData() {
     headers: {
       'Content-type': 'application/json'
     },
-    mode: 'no-cors',
-  }).then(res => res.json()).catch(error => console.error('Error:', error));
+    mode: 'cors',
+  })
+    .then(res => res.json())
+    .catch(error => console.error('Error:', error));
 }
 
 var cntFormNum = 0;
