@@ -14,16 +14,12 @@ function SendData() {
     })
   }
 
-  let method = "POST";
-  let body = JSON.stringify(data);
-  let headers = {
-    'Content-Type': 'application/json',
-  }
-
   fetch("https://higashi-arc.appspot.com/arc/AddMsg", {
-    method,
-    headers,
-    body,
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-type': 'application/json'
+    },
     mode: 'no-cors',
   }).then(res => res.json()).catch(error => console.error('Error:', error));
 }
