@@ -3,7 +3,7 @@ function SendData() {
     pass: document.getElementById("pass").value,
     text: document.getElementById("sendText").value,
     mention: [],
-    channel: document.getElementById("channelID").value,
+    channel: document.getElementById("channelName").value,
   };
 
   for (let i = 0; i < cntFormNum; ++i) {
