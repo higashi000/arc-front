@@ -1,5 +1,6 @@
 function SendData() {
   let data = {
+    pass: document.getElementById("pass").value,
     text: document.getElementById("sendText").value,
     mention: [],
     channel: document.getElementById("channelID").value,
