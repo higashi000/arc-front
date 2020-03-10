@@ -20,7 +20,7 @@ function SendData() {
     headers: {
       'Content-type': 'application/json'
     },
-    mode: 'cors',
+    mode: 'no-cors'
   })
     .then(res => res.json())
     .catch(error => console.error('Error:', error));
